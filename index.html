@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Meltdown Plan – Joyful Parenting with Myla</title>
+<meta name="description" content="Know exactly what to do during a meltdown — the throwing, hitting, screaming kind. A simple audio plan for parents of intense kids. $19 instant access." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ─── BRAND TOKENS ─── */
+:root{
+  /* Official JP Brand Colors */
+  --caribbean:   #006C6F;
+  --caribbean-dk:#005457;
+  --ash-teal:    #AACCBB;
+  --tea-green:   #D9ECBD;
+  --bright-pink: #EA6A7E;
+  --bright-pink-dk:#D0546A;
+  --melon:       #F4A191;
+  --lemon-cream: #FFFCD3;
+  --cider-spice: #AD8466;
+  --cider-lt:    #E8D5C4;
+
+  /* Page neutrals */
+  --off-white:   #FDFAF6;
+  --warm-white:  #FFFEFB;
+  --soft-bg:     #FDF6F0;
+  --border:      #E8D8CC;
+  --charcoal:    #2A2420;
+  --mid:         #5C4E46;
+  --light:       #9C8C84;
+
+  --H: 'Outfit', system-ui, sans-serif;
+  --B: 'Jost', system-ui, sans-serif;
+}
+
+body{font-family:var(--B);background:var(--off-white);color:var(--charcoal);line-height:1.7;font-size:16px;font-weight:300}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+strong{font-weight:500}
+em{font-style:italic}
+
+.container{max-width:800px;margin:0 auto;padding:0 1.5rem}
+.container-wide{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+
+/* ─── EYEBROW ─── */
+.eyebrow{
+  font-family:var(--B);font-size:.68rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--bright-pink);margin-bottom:.85rem;
+}
+
+/* ─── STICKY NAV ─── */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(253,250,246,.95);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--cider-lt);
+  padding:.7rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.nav img{height:44px;object-fit:contain}
+.nav-btn{
+  background:var(--bright-pink);color:#fff;
+  font-family:var(--B);font-weight:500;font-size:.82rem;letter-spacing:.04em;
+  padding:.6rem 1.3rem;border-radius:50px;
+  transition:background .2s, opacity .4s ease, transform .4s ease;
+  white-space:nowrap;
+}
+.nav-btn:hover{background:var(--bright-pink-dk)}
+.nav-btn.hidden{
+  opacity:0;
+  transform:translateY(-6px);
+  pointer-events:none;
+}
+
+/* ─── CURSOR GLOW ─── */
+.cursor-glow{
+  position:fixed;
+  width:320px;height:320px;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:9999;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(170,204,187,.2) 0%,rgba(255,252,211,.15) 40%,transparent 70%);
+  filter:blur(18px);
+  opacity:0;
+  transition:opacity .4s ease;
+  mix-blend-mode:multiply;
+}
+.hero:hover ~ .cursor-glow,.hero:hover .cursor-glow{opacity:1}
+
+/* ─── HERO ─── */
+.hero{
+  background:linear-gradient(160deg,
+    #FFFEF8 0%,
+    #FDF9EC 20%,
+    #F8F4E8 40%,
+    #EEF5EE 65%,
+    #E8F0ED 85%,
+    #EDF4F0 100%
+  );
+  padding:5.5rem 1.5rem 4.5rem;text-align:center;
+  position:relative;overflow:hidden;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+}
+.hero>.container{width:100%}
+.hero::before{
+  content:'';position:absolute;top:-80px;left:-60px;
+  width:480px;height:480px;border-radius:50%;
+  background:radial-gradient(circle,rgba(170,204,187,.25) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;bottom:-80px;right:-60px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,252,211,.45) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-tag{
+  display:inline-block;
+  background:var(--tea-green);color:var(--caribbean);
+  font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 14px;border-radius:50px;margin-bottom:1.5rem;
+}
+.hero h1{
+  font-family:var(--H);font-size:clamp(2.2rem,6vw,4rem);
+  font-weight:800;color:var(--charcoal);line-height:1.1;
+  max-width:800px;margin:0 auto 1.25rem;letter-spacing:-.01em;
+}
+.hero h1 em{color:var(--bright-pink)}
+.hero-sub{
+  font-size:1.08rem;color:var(--mid);
+  max-width:580px;margin:0 auto 1rem;line-height:1.8;
+}
+.hero-sub strong{color:var(--charcoal);font-weight:500}
+.hero-byline{
+  font-size:.95rem;color:var(--mid);
+  max-width:520px;margin:0 auto 2.75rem;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--bright-pink);color:#fff;
+  font-family:var(--B);font-weight:500;font-size:.95rem;letter-spacing:.04em;
+  padding:1rem 2.4rem;border-radius:50px;
+  transition:background .2s,transform .15s;border:none;cursor:pointer;
+}
+.btn:hover{background:var(--bright-pink-dk);transform:translateY(-2px)}
+.btn-lg{font-size:1.05rem;padding:1.15rem 2.8rem}
+.btn-carib{background:var(--caribbean)}
+.btn-carib:hover{background:var(--caribbean-dk)}
+.trust-row{
+  display:flex;align-items:center;justify-content:center;gap:1.25rem;
+  flex-wrap:wrap;margin-top:1.1rem;
+}
+.trust-row span{font-size:.75rem;color:var(--light);letter-spacing:.04em;display:flex;align-items:center;gap:.3rem}
+.trust-row span+span::before{content:'·';color:var(--border);margin-right:1.25rem}
+
+/* ─── PRODUCT BAND ─── */
+.product-band{
+  background:var(--warm-white);
+  border-top:1px solid var(--cider-lt);border-bottom:1px solid var(--cider-lt);
+  padding:3.5rem 1.5rem;
+  display:flex;align-items:center;justify-content:center;gap:3.5rem;flex-wrap:wrap;
+}
+.product-band img{
+  max-width:260px;border-radius:18px;
+  box-shadow:0 20px 60px rgba(44,36,28,.13);
+}
+.stats{display:flex;flex-direction:column;gap:1.5rem;max-width:260px}
+.stat{display:flex;align-items:flex-start;gap:.85rem}
+.stat-n{
+  font-family:var(--H);font-size:2.2rem;font-weight:500;
+  color:var(--caribbean);line-height:1;flex-shrink:0;min-width:64px;
+}
+.stat-l{font-size:.87rem;color:var(--mid);line-height:1.55;padding-top:.25rem}
+
+/* ─── SECTIONS ─── */
+.section{padding:5rem 1.5rem}
+.section-sm{padding:3.5rem 1.5rem}
+.section h2{
+  font-family:var(--H);font-size:clamp(1.7rem,4vw,2.5rem);
+  font-weight:800;color:var(--charcoal);line-height:1.15;
+  margin-bottom:1rem;letter-spacing:-.01em;
+}
+.section p{font-size:.97rem;color:var(--mid);line-height:1.8;margin-bottom:.85rem}
+
+/* ─── PROBLEM / BUILD STEPS ─── */
+.problem{background:var(--warm-white)}
+.build-steps{display:flex;flex-direction:column;gap:0;position:relative}
+.build-steps::before{
+  content:'';position:absolute;left:19px;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--bright-pink),var(--melon),var(--ash-teal),var(--caribbean));
+  border-radius:2px;
+}
+.build-step{
+  display:flex;gap:1.75rem;align-items:flex-start;
+  padding:0 0 2.75rem 0;position:relative;
+}
+.build-step:last-child{padding-bottom:0}
+.build-marker{
+  width:40px;height:40px;border-radius:50%;flex-shrink:0;
+  background:var(--caribbean);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+  box-shadow:0 0 0 5px var(--warm-white);
+}
+.build-marker span{font-family:var(--B);font-size:.82rem;font-weight:600;color:#fff}
+.build-step-final .build-marker{background:var(--bright-pink)}
+.build-content{padding-top:.4rem;flex:1}
+.build-content h4{
+  font-family:var(--H);font-size:1.5rem;font-weight:800;
+  color:var(--caribbean);margin-bottom:.65rem;line-height:1.2;
+}
+.build-step-final .build-content h4{color:var(--bright-pink)}
+.build-content p{font-size:.97rem;color:var(--mid);line-height:1.8;margin-bottom:0}
+.build-content p strong{color:var(--charcoal);font-weight:500}
+.build-content a{color:var(--bright-pink);text-decoration:underline;text-underline-offset:3px}
+.thought-stack{display:flex;flex-direction:column;gap:.55rem;margin-top:.65rem}
+.thought{
+  background:var(--lemon-cream);
+  border-left:3px solid var(--bright-pink);
+  border-radius:0 10px 10px 0;
+  padding:.8rem 1.15rem;
+  font-family:var(--H);
+  font-size:1rem;color:var(--charcoal);line-height:1.5;font-weight:500;
+}
+
+@keyframes nudge{
+  0%,100%{transform:translateX(0)}
+  20%{transform:translateX(5px)}
+  40%{transform:translateX(-3px)}
+  60%{transform:translateX(4px)}
+  80%{transform:translateX(-2px)}
+}
+.nudge-link{
+  display:inline-block;
+  animation:nudge 5s ease-in-out infinite;
+  animation-delay:1s;
+}
+.nudge-link:hover{animation-play-state:paused}
+
+/* ─── BUILD STEP SCROLL ANIMATIONS ─── */
+.build-step{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.build-step.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+.build-step:nth-child(1){transition-delay:.1s}
+.build-step:nth-child(2){transition-delay:.15s}
+.build-step:nth-child(3){transition-delay:.2s}
+.build-step:nth-child(4){transition-delay:.25s}
+.thought{
+  opacity:0;
+  transform:translateX(-12px);
+  transition:opacity .45s ease, transform .45s ease;
+}
+.build-step.visible .thought:nth-child(1){opacity:1;transform:translateX(0);transition-delay:.3s}
+.build-step.visible .thought:nth-child(2){opacity:1;transform:translateX(0);transition-delay:.45s}
+.build-step.visible .thought:nth-child(3){opacity:1;transform:translateX(0);transition-delay:.6s}
+.build-step.visible .thought:nth-child(4){opacity:1;transform:translateX(0);transition-delay:.75s}
+
+/* ─── CONTRAST SECTION ─── */
+.contrast{
+  position:relative;
+  padding:5.5rem 1.5rem;text-align:center;
+  background-image:url('https://res.cloudinary.com/dbwtszgtb/image/upload/v1778868669/AmandaMaryCreative_JoyfulParents_50_qh39zy.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+@media(max-width:768px){.contrast{background-attachment:scroll}}
+.contrast-box{
+  background:rgba(0,108,111,.95);
+  border-radius:20px;
+  padding:3rem 2.5rem;
+  max-width:60%;
+  margin:0 auto;
+  text-align:center;
+}
+@media(max-width:900px){.contrast-box{max-width:85%}}
+@media(max-width:600px){.contrast-box{max-width:100%;padding:2rem 1.5rem}}
+.contrast .eyebrow{color:var(--ash-teal)}
+.contrast h2{font-family:var(--H);font-size:clamp(1.6rem,4vw,2.6rem);font-weight:800;color:var(--lemon-cream);line-height:1.2;margin-bottom:1rem;max-width:680px;margin-left:auto;margin-right:auto}
+.contrast>div>p{color:rgba(255,255,255,.75);font-size:.95rem;max-width:600px;margin:0 auto 2rem;line-height:1.8}
+.contrast strong{color:#fff;font-weight:500}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;max-width:680px;margin:2rem auto 0;align-items:start}
+.cmp{border-radius:14px;padding:1.6rem}
+.cmp.yes{
+  background:var(--lemon-cream);
+  border:2px solid rgba(255,252,211,.5);
+  box-shadow:0 12px 40px rgba(0,0,0,.25);
+  transform:scale(1.04);
+}
+.cmp.no{
+  background:rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.07);
+  opacity:.65;
+}
+.cmp h4{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem;text-align:center}
+.cmp.yes h4{color:var(--caribbean)}
+.cmp.no h4{color:rgba(255,255,255,.45)}
+.cmp ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.cmp ul li{font-size:.87rem;line-height:1.55;display:flex;align-items:flex-start;gap:.5rem;text-align:left}
+.cmp.yes ul li{color:var(--charcoal);font-weight:500}
+.cmp.no ul li{color:rgba(255,255,255,.5)}
+.cmp.yes ul li::before{content:'✓';color:var(--caribbean);flex-shrink:0;font-weight:700;margin-top:1px}
+.cmp.no ul li::before{content:'✗';color:rgba(255,255,255,.3);flex-shrink:0;font-weight:700;margin-top:1px}
+
+/* ─── SCENARIOS ─── */
+.scenarios{background:var(--tea-green)}
+.scenarios h2{color:var(--caribbean)}
+.scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:2rem}
+.scenario-grid{display:flex;flex-direction:column;gap:.6rem;margin-top:1.75rem}
+.sc-card{
+  background:var(--warm-white);border:1px solid var(--cider-lt);
+  border-radius:10px;padding:1rem 1.25rem;
+  display:flex;align-items:flex-start;gap:1rem;
+}
+.sc-check{
+  width:24px;height:24px;border-radius:50%;
+  background:var(--tea-green);color:var(--caribbean);
+  font-size:.75rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+.sc-card p{font-size:.97rem;color:var(--charcoal);line-height:1.6;margin:0}
+.sc-card p strong{font-size:1rem;font-weight:700;color:var(--charcoal)}
+
+/* ─── INSIDE ─── */
+.inside{
+  background-image:url('https://kajabi-storefronts-production.s3.amazonaws.com/file-uploads/sites/2148647444/images/0e14f42-7103-c267-7d52-8d565c7d5fb6_AmandaMaryCreative_JoyfulParents_4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI4TIKYMSB4PQMFBA%2F20260513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260513T192407Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9b0021b138ede178a1e35a88796387d1940047eeb9b1711eae87e0e28f4e4e7c');
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center center;
+  position:relative;
+  min-height:500px;
+}
+.inside::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,254,251,.92);
+  pointer-events:none;z-index:0;
+}
+.inside .container{position:relative;z-index:1}
+@media(max-width:768px){
+  .inside{background-attachment:scroll;background-position:center center;}
+}
+
+.inside-list{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:1rem;margin-top:2rem;
+}
+.inside-item{grid-column:span 2}
+.inside-item:nth-child(4){grid-column:2/span 2}
+.inside-item:nth-child(5){grid-column:4/span 2}
+@media(max-width:700px){
+  .inside-list{grid-template-columns:1fr}
+  .inside-item,.inside-item:nth-child(4),.inside-item:nth-child(5){grid-column:auto}
+}
+.inside-item{
+  background:var(--warm-white);
+  border:1px solid var(--cider-lt);
+  border-radius:14px;
+  padding:1.5rem;
+  border-top:3px solid var(--caribbean);
+}
+.inside-icon{
+  width:28px;height:28px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+.inside-title-row{
+  display:flex;align-items:center;gap:.75rem;
+  margin-bottom:.5rem;
+}
+.inside-item.featured{background:none;border:none;border-radius:0;padding:0;margin:0}
+.inside-num{display:none}
+.inside-body .tag{display:none}
+.inside-body h4{
+  font-family:var(--H);font-size:1.3rem;font-weight:600;
+  color:var(--charcoal);margin-bottom:.5rem;line-height:1.25;
+}
+.inside-body p{font-size:.88rem;color:var(--mid);line-height:1.7;margin:0}
+.inside-label{display:none}
+
+/* ─── BONUSES ─── */
+.bonuses{background:linear-gradient(160deg,var(--lemon-cream) 0%,#FFF8F0 100%)}
+.bonus-list{display:flex;flex-direction:column;gap:.9rem;margin-top:1.85rem}
+.bonus-item{
+  display:flex;align-items:flex-start;gap:1rem;
+  background:var(--warm-white);border:1px solid var(--cider-lt);
+  border-radius:14px;padding:1.2rem 1.4rem;
+}
+.bonus-item .bi{font-size:1.5rem;flex-shrink:0;margin-top:2px}
+.bonus-item h4{font-size:.93rem;font-weight:500;color:var(--charcoal);margin-bottom:.3rem}
+.bonus-item p{font-size:.85rem;color:var(--mid);line-height:1.65}
+.bonus-featured{
+  background:var(--bright-pink);color:#fff;
+  border-radius:14px;padding:1.2rem 1.4rem;
+  display:flex;align-items:flex-start;gap:1rem;
+}
+.bonus-featured h4{font-size:.93rem;font-weight:500;margin-bottom:.3rem;color:#fff}
+.bonus-featured p{font-size:.85rem;color:rgba(255,255,255,.88);line-height:1.65}
+
+/* ─── TESTIMONIALS ─── */
+.testimonials{background:var(--off-white)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem;margin-top:2rem}
+.testi-card{
+  background:var(--warm-white);border:1px solid var(--cider-lt);
+  border-radius:14px;padding:1.25rem;
+  display:flex;flex-direction:column;gap:.6rem;
+}
+.testi-card .stars{color:var(--bright-pink);letter-spacing:3px;font-size:.8rem}
+.testi-card blockquote{
+  font-family:var(--H);font-style:italic;font-size:.88rem;
+  color:var(--charcoal);line-height:1.7;flex:1;
+}
+.testi-card .attr{font-size:.72rem;font-weight:500;color:var(--light);letter-spacing:.04em}
+@media(max-width:680px){.testi-grid{grid-template-columns:1fr}}
+.screenshots{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:1.25rem;
+  margin-bottom:2rem;
+}
+.screenshot{
+  border-radius:16px;overflow:hidden;
+  border:1px solid var(--cider-lt);
+  box-shadow:0 4px 20px rgba(44,36,28,.08);
+  cursor:zoom-in;
+}
+.screenshot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.sc-square{aspect-ratio:4/3;grid-column:span 2}
+.sc-tall{aspect-ratio:3/4}
+.sc-tall:nth-child(4){grid-column:2/span 2}
+.sc-tall:nth-child(5){grid-column:4/span 2}
+@media(max-width:640px){
+  .screenshots{grid-template-columns:1fr}
+  .sc-square,.sc-tall,.sc-tall:nth-child(4),.sc-tall:nth-child(5){grid-column:auto}
+  .sc-square{aspect-ratio:4/3}
+  .sc-tall{aspect-ratio:3/4}
+}
+
+/* ─── ABOUT ─── */
+.about{background:var(--ash-teal)}
+.about-inner{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:stretch;max-width:820px;margin:0 auto}
+.about-photo{
+  width:240px;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:14px;
+  flex-shrink:0;
+  display:block;
+}
+.about-text h2{font-family:var(--H);font-size:1.85rem;font-weight:800;color:var(--caribbean);margin-bottom:.75rem}
+.creds{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}
+.cred{
+  background:var(--lemon-cream);color:var(--caribbean);
+  font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  padding:5px 12px;border-radius:50px;border:1px solid rgba(0,108,111,.15);
+}
+.about-text p{font-size:.95rem;color:var(--charcoal);line-height:1.8;margin-bottom:.75rem}
+
+/* ─── CHECKLIST SCROLL ANIMATION ─── */
+.sc-card{
+  opacity:0;
+  transform:translateX(-20px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.sc-card.visible{
+  opacity:1;
+  transform:translateX(0);
+}
+.sc-check{
+  background:var(--tea-green);color:transparent;
+  transition:color .4s ease .2s, background .4s ease .2s;
+  position:relative;
+}
+.sc-check.checked{
+  color:var(--caribbean);
+  background:var(--tea-green);
+}
+
+/* ─── PURCHASE ─── */
+.purchase{background:rgb(0 108 111 / 95%);padding:6rem 1.5rem;text-align:center}
+.purchase .eyebrow{color:var(--melon)}
+.purchase h2{font-family:var(--H);font-size:clamp(1.8rem,5vw,3rem);font-weight:800;color:var(--lemon-cream);line-height:1.15;margin-bottom:1rem;letter-spacing:-.01em}
+.purchase>div>p{color:rgba(255,255,255,.65);font-size:.95rem;max-width:500px;margin:0 auto 2.75rem;line-height:1.8}
+.purchase-card{
+  background:var(--warm-white);border-radius:22px;
+  padding:2.75rem 2rem;text-align:left;max-width:520px;margin:0 auto;
+}
+.purchase-card h3{
+  font-family:var(--H);font-size:1.4rem;font-weight:800;
+  color:var(--caribbean);margin-bottom:1.35rem;
+}
+.p-list{list-style:none;margin-bottom:1.75rem;display:flex;flex-direction:column;gap:.65rem}
+.p-list li{
+  display:flex;align-items:flex-start;gap:.7rem;
+  font-size:.92rem;color:var(--charcoal);
+}
+.pck{
+  width:20px;height:20px;border-radius:50%;
+  background:var(--tea-green);color:var(--caribbean);
+  font-size:.68rem;font-weight:600;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+hr.div{border:none;border-top:1px solid var(--cider-lt);margin:1.5rem 0}
+.price-area{text-align:center;margin-bottom:1.6rem}
+.value-tag{font-size:.78rem;color:var(--light);text-decoration:line-through;margin-bottom:.3rem;letter-spacing:.04em}
+.price-big{font-family:var(--H);font-size:4rem;font-weight:500;color:var(--charcoal);line-height:1}
+.price-note{font-size:.76rem;color:var(--light);margin-top:.35rem;letter-spacing:.04em}
+.btn-buy{
+  display:block;width:100%;
+  background:var(--bright-pink);color:#fff;
+  font-family:var(--B);font-weight:500;font-size:1.05rem;letter-spacing:.04em;
+  padding:1.15rem 2rem;border-radius:50px;
+  text-align:center;transition:background .2s,transform .15s;
+  border:none;cursor:pointer;margin-bottom:1rem;
+}
+.btn-buy:hover{background:var(--bright-pink-dk);transform:translateY(-2px)}
+.secure-note{
+  display:flex;align-items:center;justify-content:center;gap:.4rem;
+  font-size:.75rem;color:var(--light);text-align:center;flex-wrap:wrap;
+}
+
+/* ─── FAQ ─── */
+.faq{background:var(--warm-white)}
+.faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.85rem}
+.faq-item{background:var(--off-white);border:1px solid var(--cider-lt);border-radius:12px;overflow:hidden}
+.faq-btn{
+  width:100%;background:none;border:none;text-align:left;
+  padding:1.1rem 1.3rem;
+  font-family:var(--B);font-size:.93rem;font-weight:400;color:var(--charcoal);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.faq-arrow{color:var(--bright-pink);transition:transform .25s;flex-shrink:0;font-size:1rem}
+.faq-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .3s ease,padding .3s ease;
+  font-size:.9rem;color:var(--mid);line-height:1.8;padding:0 1.3rem;
+}
+.faq-item.open .faq-body{max-height:320px;padding:0 1.3rem 1.15rem}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+
+/* ─── FINAL CTA ─── */
+.final-cta{
+  background:var(--bright-pink);padding:6rem 1.5rem;text-align:center;
+  position:relative;overflow:hidden;
+}
+.final-cta::before{
+  content:'';position:absolute;top:-100px;right:-80px;
+  width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,252,211,.25) 0%,transparent 70%);
+  pointer-events:none;
+}
+.final-cta .eyebrow{color:rgba(255,255,255,.75)}
+.final-cta h2{font-family:var(--H);font-size:clamp(1.9rem,5vw,3rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:1rem;max-width:640px;margin-left:auto;margin-right:auto}
+.final-cta h2 em{font-style:italic;opacity:.9}
+.final-cta p{font-size:.97rem;color:rgba(255,255,255,.85);max-width:500px;margin:0 auto 2.5rem;line-height:1.8}
+.btn-cream{background:var(--lemon-cream);color:var(--charcoal)}
+.btn-cream:hover{background:#fff;transform:translateY(-2px)}
+
+/* ─── LIGHTBOX ─── */
+.lightbox-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:rgba(0,0,0,.85);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s ease;
+}
+.lightbox-overlay.open{opacity:1;pointer-events:auto}
+.lightbox-img{
+  max-width:90vw;max-height:90vh;
+  border-radius:12px;
+  box-shadow:0 24px 80px rgba(0,0,0,.5);
+  transform:scale(.92);
+  transition:transform .3s ease;
+  object-fit:contain;
+}
+.lightbox-overlay.open .lightbox-img{transform:scale(1)}
+.lightbox-close{
+  position:absolute;top:1.25rem;right:1.5rem;
+  background:none;border:none;color:#fff;
+  font-size:2rem;cursor:pointer;line-height:1;
+  opacity:.8;transition:opacity .2s;
+}
+.lightbox-close:hover{opacity:1}
+.screenshot{cursor:zoom-in}
+
+/* ─── FOOTER ─── */
+footer{
+  background:var(--charcoal);color:#6A5E58;
+  padding:2rem 1.5rem;text-align:center;font-size:.78rem;line-height:1.9;
+}
+footer a{color:#8A7870}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:640px){
+  .hero{padding:2rem 1.5rem 3rem;min-height:100svh;}
+  .compare{grid-template-columns:1fr}
+  .cmp.yes{transform:scale(1)}
+  .cmp h4{text-align:left}
+  .cmp ul li{text-align:left}
+  .about-inner{grid-template-columns:1fr;text-align:center}
+  .about-photo{width:100%;height:280px;margin:0 auto;object-position:center 20%}
+  .about-text p[class="eyebrow"]{text-align:center}
+  .creds{justify-content:center}
+  .about-text .eyebrow{text-align:center !important}
+  .creds{justify-content:center}
+  .purchase-card{padding:1.85rem 1.25rem}
+  .product-band{flex-direction:column;text-align:center}
+  .stats{align-items:center}
+  .stat{flex-direction:column;align-items:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav class="nav">
+  <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2161143573/settings_images/5c153c-213e-e5b0-1d56-f37bd24d8_course_logos_5_.png" alt="Joyful Parenting" />
+  <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="nav-btn">Get Instant Access for $19 →</a>
+</nav>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-tag"><span class="stars" style="color:var(--bright-pink);letter-spacing:2px;margin-right:.4rem">★★★★★</span> Empowering Parents Worldwide</span>
+    <h1>Ready to know <em>exactly</em> what to do during a meltdown?</h1>
+    <p class="hero-sub">Your child is mid-meltdown. You've yelled. You've threatened the iPad. You've said things you didn't mean. <strong>There's a better way. And it takes just over an hour to learn.</strong></p>
+    <p class="hero-byline">Say goodbye to yelling, bribing, and blanking when everything spirals. Say hello to a simple, clear meltdown plan built for your big-feeling kid.</p>
+    <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="btn btn-lg" id="heroCta">Yes! I Want The Meltdown Plan →</a>
+    <div class="trust-row">
+      <span>🔒 Secure checkout</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="section inside">
+  <div class="container">
+    <p class="eyebrow">What's inside</p>
+    <h2>Everything you need. Nothing you don't.</h2>
+    <p>Short, practical, and built for parents who are already exhausted. No fluff. No long lectures. Just a clear system you can actually use.</p>
+    <div class="inside-list">
+      <div class="inside-item">
+        <div class="inside-body">
+          <div class="inside-title-row">
+            <img src="https://static.showit.co/200/t-wlt60X4_je5mu3NPTtZg/293257/asset_24.png" alt="" class="inside-icon" />
+            <h4>Short Audio Lessons</h4>
+          </div>
+          <p>Listen while you do other things. In just over an hour have all the information you need to approach meltdowns differently. No lesson is longer than 15 minutes.</p>
+        </div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-body">
+          <div class="inside-title-row">
+            <img src="https://static.showit.co/200/t-wlt60X4_je5mu3NPTtZg/293257/asset_24.png" alt="" class="inside-icon" />
+            <h4>A printable, EASY to digest guide</h4>
+          </div>
+          <p>Quick, simple ideas that will change your approach to meltdowns.</p>
+        </div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-body">
+          <div class="inside-title-row">
+            <img src="https://static.showit.co/200/t-wlt60X4_je5mu3NPTtZg/293257/asset_24.png" alt="" class="inside-icon" />
+            <h4>A flow chart for when your child does X or Y</h4>
+          </div>
+          <p>Always feel clear on next steps when the first thing doesn't work.</p>
+        </div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-body">
+          <div class="inside-title-row">
+            <img src="https://static.showit.co/200/t-wlt60X4_je5mu3NPTtZg/293257/asset_24.png" alt="" class="inside-icon" />
+            <h4>A trouble shooting chart</h4>
+          </div>
+          <p>Know what to do when things like hitting or "I hate you" happens mid meltdown.</p>
+        </div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-body">
+          <div class="inside-title-row">
+            <img src="https://static.showit.co/200/t-wlt60X4_je5mu3NPTtZg/293257/asset_24.png" alt="" class="inside-icon" />
+            <h4>A full meltdown plan</h4>
+          </div>
+          <p>Create a plan based on the guidance in the course that fits your unique family and situation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem">
+  <div class="container">
+    <h2>If you've ever thought "I can't keep doing this" then this is for you.</h2>
+    <p style="font-size:1rem;color:var(--mid);margin-bottom:2.5rem;line-height:1.8">You already love your child deeply. But in the heat of a meltdown, love alone isn't a plan. Here's how it usually goes:</p>
+
+    <!-- PROGRESSIVE STORY STEPS -->
+    <div class="build-steps">
+
+      <div class="build-step">
+        <div class="build-marker"><span>1</span></div>
+        <div class="build-content">
+          <h4>It starts small.</h4>
+          <p>"No iPad for a week." Three minutes later you're shouting "Make it two!" just to feel heard. Now you're both melting down, and the iPad has become a stand-in for your authority, your boundaries, maybe your worth as a parent.</p>
+        </div>
+      </div>
+
+      <div class="build-step">
+        <div class="build-marker"><span>2</span></div>
+        <div class="build-content">
+          <h4>Then the guilt sets in.</h4>
+          <p>Five minutes later you're standing there, guilt sinking in, Googling "how to stop a meltdown and still hold my boundary." You didn't want to yell. You didn't want to threaten. But it felt like survival.</p>
+        </div>
+      </div>
+
+      <div class="build-step">
+        <div class="build-marker"><span>3</span></div>
+        <div class="build-content">
+          <h4>And the same thoughts keep coming back.</h4>
+          <p style="font-size:.8rem;color:var(--light);letter-spacing:.06em;text-transform:uppercase;font-weight:500;margin-bottom:.75rem;margin-top:.25rem">💬 Real words from real parents</p>
+          <div class="thought-stack">
+            <div class="thought">"He screams at the top of his lungs over tiny things."</div>
+            <div class="thought">"Nothing works when it's full-blown."</div>
+            <div class="thought">"I'm too burnt out to even think straight."</div>
+            <div class="thought">"I just want to know what to DO. Not theory. What to actually DO when it's happening."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="build-step build-step-final">
+        <div class="build-marker build-marker-final"><span>→</span></div>
+        <div class="build-content">
+          <h4>But here's what's actually true.</h4>
+          <p>You're a parent who cares deeply and just hasn't been given the right tools yet. You <em>can</em> de-escalate your child — and yourself — with simple, clear steps. You're just stuck in the spiral right now.<br><br><strong><a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="nudge-link" style="color:var(--bright-pink);text-decoration:underline;text-underline-offset:3px;">The Meltdown Plan is the way out. →</a></strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" style="background:var(--ash-teal)">
+  <div class="about-inner">
+    <img class="about-photo" src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778869325/AmandaMaryCreative_JoyfulParents_56_nmghp7.jpg" alt="Myla Leinweber" />
+    <div class="about-text">
+      <p class="eyebrow" style="text-align:left;color:#fff">Your guide</p>
+      <h2 style="color:#fff">Hi, I'm Myla.</h2>
+      <div class="creds">
+        <span class="cred">PCI Certified Parent Coach</span>
+        <span class="cred">B.Ed &amp; M.Ed</span>
+        <span class="cred">Former Kindergarten Teacher</span>
+        <span class="cred">Parent of Two</span>
+      </div>
+      <p>I specialize in helping parents of kids who have big behaviors, and don't respond to the typical 'validate and take a breath' parenting advice, and see the parents I work with move from reactivity to calm, confidence, and real connection.</p>
+      <p>I created The Meltdown Plan because most parenting advice simply <strong>doesn't work when your child is mid-meltdown</strong>. You need more than "validate and stay calm." You need to know what to do when you tried the strategy and your child hits you instead of calming down.</p>
+      <p>This gives you the exact tools I teach my private clients, distilled into short, practical steps you can actually use in real time. <em>Because the tools you've been given weren't built for this.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <p class="eyebrow">Real parents. Real results.</p>
+    <h2>What parents are saying.</h2>
+    <div class="screenshots">
+      <div class="screenshot sc-square"><img src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778867835/Screenshot_2026-05-15_at_11.57.10_AM_g817jg.png" alt="Parent testimonial" /></div>
+      <div class="screenshot sc-square"><img src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778868847/IMG_1741_t8oh6y.jpg" alt="Parent testimonial" /></div>
+      <div class="screenshot sc-square"><img src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778868847/IMG_1845_uc5ruc.jpg" alt="Parent testimonial" /></div>
+      <div class="screenshot sc-tall"><img src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778867788/Screenshot_2026-05-15_at_11.54.16_AM_ezdtzq.png" alt="Parent testimonial" /></div>
+      <div class="screenshot sc-tall"><img src="https://res.cloudinary.com/dbwtszgtb/image/upload/v1778868846/IMG_4066_ebvcfb.png" alt="Parent testimonial" /></div>
+    </div>
+    <div style="text-align:center;margin-top:.5rem">
+      <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="btn btn-lg">Join these parents in being meltdown ready →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTRAST -->
+<section class="contrast">
+  <div class="contrast-box">
+    <h2>Meltdowns feel like quicksand right now; the more you try to fix it, the faster it falls apart.</h2>
+    <p>Most parenting advice wasn't built for kids like yours. This isn't a one-size-fits-all script. It's a <strong>flexible, practical plan</strong> grounded in real-world experience and a deep understanding of what intense kids actually need when everything's coming undone.</p>
+    <p>Because their meltdowns aren't the "take a deep breath" tantrums you see on Instagram. <strong>They're messy, emotional, full-body storms.</strong> The Meltdown Plan was made for exactly that.</p>
+    <div class="compare">
+      <div class="cmp yes">
+        <h4>✦ With The Plan</h4>
+        <ul>
+          <li>Meltdowns feel less intense and shorter</li>
+          <li>You know what to try when the first thing doesn't work</li>
+          <li>You stay calmer, even when your child hits or screams</li>
+          <li>You feel confident, not worn down and defeated</li>
+        </ul>
+      </div>
+      <div class="cmp no">
+        <h4>✗ Without A Plan</h4>
+        <ul>
+          <li>The same battles repeat and nothing changes</li>
+          <li>You walk away wishing you hadn't yelled</li>
+          <li>The guilt sits heavy and the chaos doesn't shift</li>
+          <li>The stress builds and your whole family feels it</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem">
+      <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="btn btn-lg" style="margin:0 auto">Get The Meltdown Plan for $19 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="section scenarios">
+  <div class="container">
+    <h2>Here's when you'll use it</h2>
+    <p style="color:var(--caribbean)">These are the exact situations The Meltdown Plan was built for:</p>
+    <div class="scenario-grid">
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>Screen time ends</strong> and they throw down the iPad and run at you</p></div>
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>Clean-up time</strong>: screaming "NO!" with blocks flying at your head</p></div>
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>After school</strong>: they walk in and immediately rage because their LEGO moved</p></div>
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>Grocery store checkout</strong>: the candy aisle, the "I hate you!" in front of strangers</p></div>
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>After a playdate</strong>: ice cream demand and kicking your seat while you drive</p></div>
+      <div class="sc-card"><span class="sc-check">✓</span><p><strong>When the first strategy doesn't work</strong>: you need to know what to do next</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PURCHASE -->
+<section class="purchase" id="purchase">
+  <div class="container">
+    <p class="eyebrow">Get instant access</p>
+    <h2>Stop surviving the meltdowns.<br/>Start <em>leading</em> through them.</h2>
+    <p>All these resources valued at over $67, yours today for just $19. One payment. Instant access. No subscription.</p>
+    <div class="purchase-card">
+      <h3>Here's everything you get instantly:</h3>
+      <ul class="p-list">
+        <li><span class="pck">✓</span> Audio lessons via private podcast feed (any app)</li>
+        <li><span class="pck">✓</span> Fillable Meltdown Plan PDF guide</li>
+        <li><span class="pck">✓</span> Flowchart for when X or Y happens</li>
+        <li><span class="pck">✓</span> Troubleshooting chart for hitting, "I hate you!" &amp; more</li>
+        <li><span class="pck">✓</span> BONUS: Validation That Backfires audio</li>
+        <li><span class="pck">✓</span> BONUS: Grocery-Store Checkout Blowup audio</li>
+        <li><span class="pck">✓</span> BONUS: Screen Turn-Off Explosion audio</li>
+        <li><span class="pck">✓</span> BONUS: Leaving the Park + more scenario audios</li>
+        <li><span class="pck">✓</span> BONUS VIDEO: For the Reluctant Partner</li>
+      </ul>
+      <hr class="div" />
+      <div class="price-area">
+        <div class="value-tag">Total value: over $67</div>
+        <div class="price-big">$19</div>
+        <div class="price-note">One-time payment &nbsp;·&nbsp; Instant access &nbsp;·&nbsp; No subscription</div>
+      </div>
+      <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" class="btn-buy" target="_blank">
+        YES! I'm Ready for The Meltdown Plan →
+      </a>
+      <div class="secure-note">🔒 Secure checkout via Kajabi &nbsp;·&nbsp; Instant digital delivery</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container">
+    <p class="eyebrow">Questions</p>
+    <h2>Everything you might be wondering.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">What age range is this for? <span class="faq-arrow">▾</span></button>
+        <div class="faq-body">Designed for parents of children ages 2–8, though parents of children both younger and older will find the information helpful. If your child has intense, prolonged meltdowns and you don't have a consistent approach, this is for you.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">How do I access the audio lessons? <span class="faq-arrow">▾</span></button>
+        <div class="faq-body">After purchase you'll get instant access via a private podcast feed. Add it to any podcast app and listen anywhere. No lesson is longer than 15 minutes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">How long will it take to work? <span class="faq-arrow">▾</span></button>
+        <div class="faq-body">Many parents feel relief the very first time they use the plan, simply because they finally know what to do in the middle of a meltdown. Like any new skill, the more you practice, the more natural it becomes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">Will this get rid of meltdowns completely? <span class="faq-arrow">▾</span></button>
+        <div class="faq-body">No, and as you'll learn in the course, that's actually not the goal. The Meltdown Plan helps parents reduce the intensity and duration of meltdowns, and in some cases the frequency. The goal is confidence and calm, not a meltdown-free household.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">I've tried scripts before and they didn't work for my child. <span class="faq-arrow">▾</span></button>
+        <div class="faq-body">This plan was built specifically for parents whose kids don't respond to standard calm-parenting strategies. It addresses what to do when validation, breathing, and typical de-escalation techniques backfire, because intense kids need more than one approach.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <p class="eyebrow">One last thing</p>
+    <h2>You don't need to do this perfectly.<br/>You just need <em>a plan that works</em> when things fall apart.</h2>
+    <p>Grab the plan today. By tonight, watch how meltdowns change in your home. If you're ready to stop scrambling and start leading, this is your next step.</p>
+    <a href="https://joyfulparents.mykajabi.com/offers/5QCRhWFL/checkout" target="_blank" class="btn btn-lg btn-cream">Get Instant Access for $19 →</a>
+    <div class="trust-row" style="justify-content:center;margin-top:1.1rem">
+      <span style="color:rgba(255,255,255,.75)">🔒 Secure checkout</span>
+      <span style="color:rgba(255,255,255,.75)">Instant delivery</span>
+      <span style="color:rgba(255,255,255,.75)">No subscription</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 The Joyful Parenting Collective &nbsp;·&nbsp; Created by Myla Leinweber</p>
+  <p style="margin-top:.4rem"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms</a> &nbsp;·&nbsp; <a href="https://joyfulparents.ca/contact">Contact</a></p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Testimonial" />
+</div>
+
+<script>
+document.querySelectorAll('.faq-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.closest('.faq-item');
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{
+      i.classList.remove('open');
+      i.querySelector('.faq-btn').setAttribute('aria-expanded','false');
+    });
+    if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+  });
+});
+
+// Lightbox for testimonial screenshots
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.screenshot img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+const closeLightbox = () => {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+};
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+
+// Hide nav button until scrolled past hero
+const navBtn = document.querySelector('.nav-btn');
+const heroEl = document.querySelector('.hero');
+navBtn.classList.add('hidden');
+const navScroll = () => {
+  const heroBtm = heroEl.getBoundingClientRect().bottom;
+  if(heroBtm < 0){
+    navBtn.classList.remove('hidden');
+  } else {
+    navBtn.classList.add('hidden');
+  }
+};
+window.addEventListener('scroll', navScroll, {passive:true});
+
+// Checklist scroll animation — items slide in, previous checkbox gets checked
+const scCards = document.querySelectorAll('.sc-card');
+const scObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const card = entry.target;
+      const index = Array.from(scCards).indexOf(card);
+      // Show this card
+      card.classList.add('visible');
+      // Check the checkbox of the previous card
+      if(index > 0){
+        scCards[index - 1].querySelector('.sc-check').classList.add('checked');
+      }
+      // If it's the last card, check its own box after a short delay
+      if(index === scCards.length - 1){
+        setTimeout(() => {
+          card.querySelector('.sc-check').classList.add('checked');
+        }, 600);
+      }
+      scObserver.unobserve(card);
+    }
+  });
+}, {threshold: 0.2, rootMargin: '0px 0px -60px 0px'});
+scCards.forEach(card => scObserver.observe(card));
+
+// Build steps scroll animation
+const buildSteps = document.querySelectorAll('.build-step');
+const stepObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      stepObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.2, rootMargin: '0px 0px -60px 0px'});
+buildSteps.forEach(step => stepObserver.observe(step));
+
+
+// Cursor glow — hero only
+const glow=document.getElementById('cursorGlow');
+const hero=document.querySelector('.hero');
+document.addEventListener('mousemove',e=>{
+  glow.style.left=e.clientX+'px';
+  glow.style.top=e.clientY+'px';
+  const r=hero.getBoundingClientRect();
+  const inHero=e.clientY>=r.top&&e.clientY<=r.bottom&&e.clientX>=r.left&&e.clientX<=r.right;
+  glow.style.opacity=inHero?'1':'0';
+});
+document.addEventListener('mouseleave',()=>{glow.style.opacity='0';});
+</script>
+</body>
+</html>
